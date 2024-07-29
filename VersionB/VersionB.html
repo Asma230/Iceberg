@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VersionB</title>
+    <link rel="icon" type="image/x-icon" href="../webImages/icebergIcon.ico">
+    <link rel="stylesheet" type="text/css" href="../ChoosePhotos.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+    <div id = "audioContainer">
+    
+        <audio id="myAudio" src="../Audio/Audio0.mp3" autoplay controls>
+            Your browser does not support the audio element.
+          </audio>
+
+        <button class="hideAudio">
+            Next
+        </button>
+
+    </div>
+
+    <div id = "choosePhoto" class="container">
+
+        <div id="left-panel" style="background-color: #81ccc8;">
+            <p id = "Description">Instructions (text)</p>
+            <p id = "ToSelect">行為</p>
+            <img id="selectedImage" src="../photos/0.png" alt="Image Description">
+        </div>
+
+        <div id="right-panel">
+
+            <div id="right-photos"></div>
+
+            <div id="right-buttons">
+                <img id="enlarge" src="../webImages/enlarge.png" alt="increase size button">
+                <img id="reduce" src="../webImages/reduce.png" alt="reduce size button">   
+                <img id="submit" src="../webImages/submit.png" alt="submit button">   
+            </div>
+
+        </div>
+
+    </div>
+    <script type="module" src="../toggleView.js"></script>
+    <script type="module" src="VersionB.js"></script>
+    <script src="../photos.js"></script> 
+</body>
+</html>

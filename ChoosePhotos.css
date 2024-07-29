@@ -1,0 +1,113 @@
+#Description{
+    font-size: 4vh;
+    line-height: 1.5; 
+}
+
+#ToSelect{
+    font-size: 4vh;
+    line-height: 1.5; 
+}
+
+#audioContainer {
+  display: flex;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: rgb(192, 210, 201);
+}
+
+.container {
+    display: none;
+}
+
+#left-panel {
+    flex-basis: 30%;
+    background-color: rgb(255, 255, 255);
+    width: 70vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#right-panel {
+  flex-basis: 70%;
+  background-color: rgb(240, 255, 251);
+}
+
+#right-photos {
+    background-color: rgb(255, 255, 255);
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 85vh;
+  }
+
+  #right-buttons {
+    background-color: rgb(255, 255, 255);
+    height: 15vh;
+    display: flex;
+  }
+
+#selectedImage {
+    width: 80%;
+    border: 5px solid #000;
+}
+
+#enlarge,#reduce {
+    height: 15vh;
+    margin-right: 10px;
+}
+
+#submit {
+    height: 15vh;
+    width:auto;
+}
+
+.photo {
+    position: relative;
+    display: inline-block;
+  }
+
+  .photo {
+    transition: transform 0.3s ease;
+  }
+
+  .photo:hover {
+    transform: scale(1.08);
+  }
+
+  .but {
+    position: relative;
+    display: inline-block;
+  }
+
+  .but {
+    transition: transform 0.3s ease;
+  }
+
+  .but:hover {
+    transform: scale(0.9);
+  }
+
+  .hideAudio {
+    transition: transform 0.3s ease;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    bottom: 10vh;
+    right: 10vw;
+  }
+
+  .hideAudio:hover {
+    background-color: #3d8e3f;
+  }
+
+  
+  #myAudio {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: calc(60%);
+  }
